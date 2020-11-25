@@ -1,0 +1,11 @@
+#Finding Palindrome using For loop:
+palindrome = input("enter a word:")
+def rev(palindrome):
+    rev_palindrome = ""
+    for alpha in palindrome:
+        rev_palindrome = alpha+rev_palindrome
+    if palindrome == rev_palindrome:
+            print("Yes")
+    else:
+            print("No")
+rev(palindrome)
